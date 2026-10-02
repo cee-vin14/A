@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "inbox-unsub"
+version = "0.1.0"
+description = "Scan your inbox for marketing emails and unsubscribe from them, locally."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+inbox-unsub = "inbox_unsub.cli:main"
+
+[tool.setuptools]
+packages = ["inbox_unsub"]
